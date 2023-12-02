@@ -1,15 +1,15 @@
 import pytest
 
-from application.db.people import people
-from application.salary import salary
+from application.db.people import get_employees()
+from application.salary import calculate_salary
 
 
 def test_salary():
-    assert salary() == 'Вывод данных по зарплатам'
+    assert calculate_salary() == 'Вывод данных по зарплатам'
 
 
 def test_people():
-    assert people() == 'Вывод данных о сотрудниках'
+    assert get_employees() == 'Вывод данных о сотрудниках'
 
 
 if __name__ == '__main__':

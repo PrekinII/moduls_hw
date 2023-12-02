@@ -1,6 +1,6 @@
 
-from application.db.people import people
-from application.salary import salary
+from application.db.people import get_employees
+from application.salary import calculate_salary
 
-print(people())
-print(salary())
+print(get_employees())
+print(calculate_salary())
